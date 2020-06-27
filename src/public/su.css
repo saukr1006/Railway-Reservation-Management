@@ -1,0 +1,71 @@
+body{
+	background-color: #aaaaaa;
+	background-image: url('img.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	font: 14px/1.7 "Open Sans",Helvetica,Arial,sans-serif;
+	font-weight: bold;
+}
+
+header{
+
+	text-align: center;
+	font-style: algerian,calibri ;
+	color: black;
+	margin-top: -2.5% ;
+	/*margin: 10px 280px;*/
+	/*background-color: white;*/
+	border-radius: 500px;
+	/*display: inline-block;*/
+
+}
+
+footer{
+	display: inline-block;
+	text-align: center;
+	border-bottom: 2px solid white;
+	color: white;
+	position: absolute;
+	bottom: 10px;
+	left: 400px;
+
+}
+a:hover,.aboutus a:hover{
+	color:black;
+	text-shadow: 0.5px 0.5px red;
+}
+.aboutus a{
+	color: white;
+	text-decoration: none;
+}
+
+
+.Railgaadi {
+	color: black;
+	font-size: 50px;
+	font-family: Arial;
+	text-shadow: 0.5px 0.5px red;
+	/*display:inline-block;*/
+}
+
+
+.su-form{
+	background-color: #Fff;
+    width: 500px;
+    box-shadow: 0.5px 0.5px 30px 0px rgba(0, 0, 200, 1);
+    margin: -9% auto 0;
+    padding: 10px;
+    text-align: -webkit-center;
+    border-radius: 75px;
+}
+.inputs{
+	border-radius: 5px; 
+	width: 50%;
+	padding: 5px 2px;
+}
+.su-btn{
+	    width: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    background: #32CC35;
+

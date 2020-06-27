@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Railgaadi</title>
+
+	<link rel="icon" type="image/png" href="logo.png">
+    
+    <link rel="stylesheet" type="text/css" href="/css/after-login-pg.css">
+</head>
+
+
+
+<body>
+    <div class="wlcm-user" 
+    style=
+    "color: orange;
+	font-size: 30px;
+	font-family: Calibri;
+	text-shadow: 0.5px 0.5px black;
+	display: inline;">
+    	Welcome {{user}}!	
+    </div>
+    
+    <br><br>
+
+    <body>
+	<header>
+		<div class="Railgaadi">
+			<h1>Railgaadi</h1>
+		</div>
+	</header>
+	
+	<div class="login">
+		<!-- <span class="sin"> -->
+			<form  action="http://localhost:3000/logout" method="POST">
+        		<button 
+        		style=
+        		"font-size: 120%;
+        		width: 75%;
+				border-radius: 20px;
+    			padding: 5px;
+    			background: #32CC35;
+    			margin-top: 5%;
+    			display: inline;">
+    			Sign out
+    			</button>
+    		</form>
+    		<form action='http://localhost:3000/login/bookingstatus' method='GET'>
+        		<button style="font-size: 120%;
+        		width: 120%;
+				border-radius: 20px;
+    			padding: 5px;
+    			background: #32CC35;
+    			margin-top: 5%;
+    			display: inline;" >Booking Status</button>
+    		</form>
+		<!-- </span> -->
+		<!-- <span class="sup"><a href="su.html">Sign Up</a></span> -->
+	</div>
+	<div>
+		<nav class="main">
+			<span class="st" style="color: black; text-shadow: 0.5px 0.5px red;">SEARCH TRAINS</span>
+			<span class="ps"><a href="pnr.html">ABOUT STATION</a></span>
+			<span class="rs"><a href="/meals">BOOK MEAL</a></span>
+			<span class="sn"><a href="/nn.html">SEARCH BY NUMBER</a></span>
+		</nav>
+	</div>
+
+	<form action='http://localhost:3000/login/train_details' method='GET'>
+	<div class="TrainForm">
+		<div class="SearchTrainForm">
+			<div class="InputCntr" id="odd">
+				<div class="chkst">BOOK YOUR SEAT</div>
+				<div class="InputLabel">From</div>
+				<form action='http://localhost:3000/trains' method='GET'>
+				<input class="inputs" maxlength placeholder="Leaving from" type="text" autocomplete="on" name="start">
+				<div class="InputLabel">To</div>
+				<input class="inputs" maxlength placeholder="Going to" type="text" autocomplete="on" name="end">
+				<div class="InputLabel">Date</div>
+				<input class="inputs" type="Date" name="date">
+				<br>
+				<button style="font-size: 120%" class="st-btn">Search Trains</button>
+				</form>
+			</div>
+		</div>
+		
+	</div>
+	<form action='http://localhost:3000/login/train_details' method='GET'>
+	<br>
+    
+	
+
+	<footer style="display: inline-block;
+	text-align: center;
+	border-bottom: 2px solid white;
+	color: white;
+	position: absolute;
+	bottom: -100px;
+	left: 400px;">
+		<!-- <hr style="border-width: 2px;" width="100%"> -->
+		<span class="logo" style="display: inline;"><img src="logo.png" width="4%" alt="logo"></span>
+		<span class="aboutus" ><a href="#">About us </a>| </span>
+		&copy; Copyright Railgaadi.in
+	</footer>
+</body>
+
+
+
+   <!--  <form action='http://localhost:3000/login/train_details' method='GET'>
+        <div class="InputLabel">From</div>
+        <input class="inputs" maxlength placeholder="Leaving from" type="text" autocomplete="on" name="start">
+        <div class="InputLabel">To</div>
+        <input class="inputs" maxlength placeholder="Going to" type="text" autocomplete="on" name="end">
+        <div class="InputLabel">Date</div>
+        <input class="inputs" type="Date" name="date">
+        <br>
+        <br>
+        <button style="font-size: 120%" class="st-btn">Search Trains</button>
+        </form>
+        <br><br>
+        <form action="http://localhost:3000/logout" method="POST">
+            <button>Logout</button>
+        </form>
+        <br><br>
+        <form action='http://localhost:3000/login/bookingstatus' method='GET'>
+            <button>Booking Status</button>
+        </form>
+</body> -->
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- logo of our website-->
+	<link rel="icon" type="image/png" href="logo.png">
+	
+	<link rel="stylesheet" type="text/css" href="SearchTrain.css">
+
+	<title>Railgaadi</title>
+</head>
+
+<body>
+	<header>
+		<div class="Railgaadi">
+			<h1>Railgaadi</h1>
+		</div>
+	</header>
+	
+	<div class="login">
+		<span class="sin"><a href="si.html">Sign In</a></span>
+		<span class="sup"><a href="su.html">Sign Up</a></span>
+	</div>
+	<div>
+		<nav class="main">
+			<span class="st" style="color: black; text-shadow: 0.5px 0.5px red;">SEARCH TRAINS</span>
+			<span class="ps"><a href="pnr.html">ABOUT STATION</a></span>
+			<span class="rs"><a href="/meals">BOOK MEAL</a></span>
+			<span class="sn"><a href="nn.html">SEARCH BY NUMBER</a></span>
+		</nav>
+	</div>
+
+	<div class="TrainForm">
+		<div class="SearchTrainForm">
+			<div class="InputCntr" id="odd">
+				<div class="chkst">BOOK YOUR SEAT</div>
+				<div class="InputLabel">From</div>
+				 <form action='http://localhost:3000/trains' method='GET'>
+				<input class="inputs" maxlength placeholder="Leaving from" type="text" autocomplete="on" name="start">
+				<div class="InputLabel">To</div>
+				<input class="inputs" maxlength placeholder="Going to" type="text" autocomplete="on" name="end">
+				<div class="InputLabel">Date</div>
+				<input class="inputs" type="Date" name="date">
+				<br>
+				<button style="font-size: 120%" class="st-btn">Search Trains</button>
+				 </form>
+			</div>
+		</div>
+		
+	</div>
+	
+
+	<footer>
+		<!-- <hr style="border-width: 2px;" width="100%"> -->
+		<span class="logo" style="display: inline;"><img src="logo.png" width="4%" alt="logo"></span>
+		<span class="aboutus" ><a href="#">About us </a>| </span>
+		&copy; Copyright Railgaadi.in
+	</footer>
+</body>
+
+</html>

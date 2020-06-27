@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>Railgaadi</title>
+    <link rel="stylesheet" type="text/css" href="/css/booktrainpg.css">
+</head>
+
+
+<body>
+    <div style="position: absolute;
+    left: 1.5%;
+    top:3%;
+    display: inline;">
+        <a href="/login"><img src="/css/homepage-icon.png" width="10%"></a>
+    </div>
+    <header>
+        <div class="Railgaadi">
+            <h1>Railgaadi</h1>
+        </div>
+    </header>
+
+    <table style="border: 2px solid black;
+        border-collapse: collapse;
+        text-align: -webkit-center;
+        position: absolute;
+        top: 200px;
+        left: 570px;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 2%;">
+
+        <caption style="font-size: 20px; text-align: center;
+            background-color: orange;
+            margin-bottom: 2px;
+            border-radius: 5px;">Details of {{sn}}, No. of Platforms = {{np}}
+        </caption>
+        <tr style="background-color: #32CC35;
+            padding: 50px 5px;
+            border-spacing: 2px;">
+            <!-- <th style="padding: 10px;"> <label><strong>Station Name</strong></label>    </th> -->
+            <th style="padding: 10px;"> <label><strong>Train No.</strong></label> </th>
+            <th style="padding: 10px;"> <label><strong>Train Name</strong></label> </th>
+            <th style="padding: 10px;"> <label for="class"><strong>Origin</strong></label> </th>
+            <th style="padding: 10px;"> <label><strong>Destination</strong></label> </th>
+            <!-- <th style="padding: 10px;"> <label><strong></strong></label>     </th> -->
+        </tr>
+
+        {{#each a}}
+        <!-- <form action='http://localhost:3000/login/book' method='POST'> -->
+        <tr style="background-color: #ffffff;
+                border-radius: 40px; 
+                padding: 50px 5px;
+                margin-bottom: 2px;
+                ">
+            <!-- <td style="padding: 6px;"> <textarea readonly name='Train_number'> -->
+            <!-- </textarea>       </td> -->
+            <td style="padding: 10px;">
+                <!-- <textarea readonly name='Train_name'> -->{{this.trainNo}}
+                <!-- </textarea> -->
+            </td>
+            <td style="padding: 10px;">
+                <!-- <textarea readonly name='date'> -->{{this.trainName}}
+                <!-- </textarea> -->
+            </td>
+            <td style="padding: 10px;">
+                <!-- <textarea readonly name='date'> -->{{this.origin}}
+                <!-- </textarea> -->
+            </td>
+            <td style="padding: 10px;">
+                <!-- <textarea readonly name='date'> -->{{this.destination}}
+                <!-- </textarea> -->
+            </td>
+            <!-- <td style="padding: 6px;">  <textarea readonly name='date'> -->
+            <!-- </textarea>        </td> -->
+
+
+        </tr>
+        <!-- </form> -->
+        <br>
+        {{/each}}
+
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  {{#each a}}
+        <p>
+            <strong>Station Name:</strong>  {{this.stName}}
+            <br>
+            <strong>Train Number:</strong>  {{this.trainNo}}
+            <br>
+            <strong>Train Name:</strong>  {{this.trainName}}
+            <br>
+            <strong>Origin:</strong>  {{this.origin}}
+            <br>
+            <strong>Destination:</strong>  {{this.destination}}
+            <br>
+            <strong>Number of Platforms:</strong>  {{this.noOfPlatform}}
+            <br>
+        </p>
+    {{/each}} -->
+
+</body>
+
+</html>

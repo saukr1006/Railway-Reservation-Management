@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- logo of our website-->
+	<link rel="icon" type="image/png" href="logo.png">
+	
+	<link rel="stylesheet" type="text/css" href="nn.css">
+
+	<title>Railgaadi</title>
+</head>
+
+
+
+<body>
+	<header>
+		<div class="Railgaadi">
+			<h1>Railgaadi</h1>
+		</div>
+	</header>
+	
+	<!-- <div class="login">
+		<span class="sin"><a href="si.html">Sign In</a></span>
+		<span class="sup"><a href="su.html">Sign Up</a></span>
+	</div> -->
+	<div style="position: absolute;
+    left: 1.5%;
+    top:3%;
+    display: inline;">
+        <a href="/login"><img src="/css/homepage-icon.png" width="10%"></a>
+    </div>
+	<div>
+		<nav class="main">
+			<span class="st"><a href="SearchTrain.html">SEARCH TRAINS</a></span>
+			<span class="ps"><a href="pnr.html">ABOUT STATION</a></span>
+			<span class="rs"><a href="/meals">BOOK MEAL</a></span>
+			<span class="sn" style="color: black; text-shadow: 0.5px 0.5px red;">SEARCH BY NUMBER</span>
+		</nav>
+	</div>
+
+	<div class="TrainForm">
+		<div class="SearchByName-Number">
+			<div class="InputCntr">
+				<div class="chknn">KNOW ABOUT PARTICULAR TRAIN</div>
+				<div class="InputLabel">Train Number</div>
+				<form action='http://localhost:3000/sbn' method="GET">
+				<input class="inputs" maxlength placeholder="Enter train number" type="text" width="500px" name="td">
+				<br>
+				<button style="font-size: 120%" class="nn-btn">Search</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<footer>
+		<!-- <hr style="border-width: 2px;" width="100%"> -->
+		<span class="logo" style="display: inline;"><img src="logo.png" width="4%" alt="logo"></span>
+		<span class="aboutus" ><a href="#">About us </a>| </span>
+		&copy; Copyright Railgaadi.in
+	</footer>
+</body>
+
+</html>

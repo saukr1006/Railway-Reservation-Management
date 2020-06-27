@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>Railgaadi</title>
+    <link rel="stylesheet" type="text/css" href="/css/booktrainpg.css">
+</head>
+
+
+<body>
+    <div style="position: absolute;
+    left: 1.5%;
+    top:3%;
+    display: inline;">
+        <a href="/login"><img src="/css/homepage-icon.png" width="10%"></a>
+    </div>
+    <header>
+        <div class="Railgaadi">
+            <h1>Railgaadi</h1>
+        </div>
+    </header>
+
+    <table style="border: 2px solid black;
+        border-collapse: collapse;
+        text-align: -webkit-center;
+        position: absolute;
+        top: 200px;
+        left: 600px;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 2%;">
+
+        <caption style="font-size: 20px; text-align: center;
+            background-color: yellow;
+            margin-bottom: 2px;
+            border-radius: 5px;
+            ">Order Your Food!</caption>
+        <tr style="background-color: #32CC35;
+            padding: 50px 5px;
+            border-spacing: 2px;">
+            <th style="padding: 10px;"> <label><strong>Outlet</strong></label> </th>
+            <th style="padding: 10px;"> <label><strong>Time</strong></label> </th>
+            <th style="padding: 10px;"> <label><strong>
+                        <!--<img src="/css/phone-logo.png" width="3%">--> Phone Number</strong></label> </th>
+
+        </tr>
+
+        {{#each meal}}
+        <tr style="background-color: #ffffff;
+                border-radius: 40px; 
+                padding: 50px 5px;
+                margin-bottom: 2px;
+                ">
+            <td style="padding: 10px;">
+                <!-- <textarea readonly name='Train_number'> -->{{this.outlets}}
+                <!-- </textarea> -->
+            </td>
+            <td style="padding: 10px;">
+                <!-- <textarea readonly name='Train_name'> -->{{this.time}}
+                <!-- </textarea> -->
+            </td>
+            <td style="padding: 10px;">
+                <!-- <textarea readonly name='date'> -->{{this.phNo}}
+                <!-- </textarea> -->
+            </td>
+
+
+        </tr>
+        </form>
+        <br>
+        {{/each}}
+
+    </table>
+
+    <!-- {{#each meal}}
+        <p>
+            <strong>Outlet:</strong>  {{this.outlets}}
+            <br>
+            <strong>Time:</strong>  {{this.time}}
+            <br>
+            <strong>Phone Number:</strong>  {{this.phNo}}
+            <br>
+        </p>
+    {{/each}}
+ -->
+</body>
+
+</html>

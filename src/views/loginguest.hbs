@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>Railgaadi</title>
+    <link rel="stylesheet" type="text/css" href="/css/booktrainpg.css">
+</head>
+
+
+<body>
+    <div style="position: absolute;
+	left: 1.5%;
+	top:3%;
+	display: inline;">
+        <a href="/login"><img src="/css/homepage-icon.png" width="10%"></a>
+    </div>
+    <header>
+        <div class="Railgaadi">
+            <h1>Railgaadi</h1>
+        </div>
+    </header>
+
+    <table style="border: 2px solid black;
+		border-collapse: collapse;
+		text-align: -webkit-center;
+		position: absolute;
+		top: 200px;
+		left: 450px;
+		padding: 5px;
+		border-radius: 5px;
+		margin-bottom: 2%;">
+
+        <caption style="font-size: 20px; text-align: center;
+			background-color: orange;
+			margin-bottom: 2px;
+			border-radius: 5px;">Details of Available Trains</caption>
+        <tr style="background-color: #32CC35;
+			padding: 50px 5px;
+			border-spacing: 2px;">
+            <th style="padding: 10px;"> <label><strong>Train Number</strong></label> </th>
+            <th style="padding: 10px;"> <label><strong>Train Name</strong></label> </th>
+            <th style="padding: 10px;"> <label><strong>Start</strong></label> </th>
+            <th style="padding: 10px;"> <label><strong>End</strong></label> </th>
+            <th style="padding: 10px;"> <label for="class"><strong>Runs on</strong></label> </th>
+        </tr>
+
+        {{#each train}}
+        <!-- <form action='http://localhost:3000/login/train_details' method='POST'> -->
+        <tr style="background-color: #ffffff;
+				border-radius: 40px; 
+				padding: 50px 5px;
+				margin-bottom: 2px;
+				">
+            <td style="padding: 6px;">
+                {{this.trNo}}
+            </td>
+            <td style="padding: 6px; padding-right: 20px;">
+                {{this.trName}}
+            </td>
+            <td style="padding: 6px; padding-right: 20px; ">
+                {{this.start}}
+            </td>
+            <td style="padding: 6px; padding-right: 20px;">
+                {{this.end}}
+            </td>
+            <td style="padding: 6px; padding-right: 20px;">
+                {{#each this.runsOn}}
+                    {{this.days}} 
+                {{/each}}
+            </td>
+        </tr>
+        <br>
+        {{/each}}
+
+    </table>
+
+</body>
+
+</html>

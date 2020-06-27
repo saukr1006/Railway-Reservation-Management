@@ -1,0 +1,118 @@
+body{
+	background-color: #aaaaaa;
+	background-image: url('img.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	font: 14px/1.7 "Open Sans",Helvetica,Arial,sans-serif;
+	font-weight: bold;
+}
+
+header{
+	text-align: center;
+	font-style: algerian,calibri ;
+	color: white;
+	margin-top: -2.5%;
+
+}
+footer{
+	display: inline-block;
+	text-align: center;
+	border-bottom: 2px solid white;
+	color: white;
+	position: absolute;
+	bottom: 10px;
+	left: 400px;
+
+}
+
+
+a{
+	color:white;
+	text-decoration: none;
+}
+
+a:hover{
+	color:black;
+	text-shadow: 0.5px 0.5px red;
+	
+}
+
+.main{
+	color: white;
+	display:inline-block;
+	margin:35px 280px;
+	position: absolute;
+	
+
+}
+
+.st , .ps , .rs , .sn{
+	border:2px solid black;
+	margin-right: 25px;
+	background-color: #696969;
+	border-radius: 4px;
+	box-shadow: 1px 1px red;
+}
+
+.login{
+	margin-left:1300px;
+	top:4%;
+	position: absolute;
+}
+
+.st,.rs,.ps{
+	padding:10px 40px 
+}
+
+.sn{
+	padding:10px 35px 
+}
+
+.sin,.sup{
+	/*margin-top: -10%;*/
+	border:2px solid black;
+	padding:5px 10px;
+	border-radius: 4px;
+	background-color: #696969;
+	box-shadow: 1px 1px green;
+}
+.sup a:hover,.sin a:hover{
+	color:black;
+	text-shadow: 1px 1px green;	
+}
+
+
+.SearchByName-Number .InputCntr{
+	background-color: #Fff;
+    width: 300px;
+    
+    margin: 10% auto 0;
+    text-align: -webkit-center;
+    border-radius: 40px; 
+    padding: 50px 5px;
+}
+.inputs{
+	width:70%;
+	border-radius: 5px;
+	padding: 5px 2px;
+}
+.chknn{
+	color: green;
+	margin-right: 0%;
+	margin-bottom: 5%;
+}
+
+.nn-btn{
+	width: 50%;
+    border-radius: 20px;
+    padding: 5px;
+    background: #32CC35;
+    margin-top: 5%;
+}
+
+.Railgaadi {
+	color: black;
+	font-size: 50px;
+	font-family: Arial;
+	text-shadow: 0.5px 0.5px red;
+}

@@ -1,0 +1,44 @@
+body{
+	background-color: #aaaaaa;
+	background-image: url('img.jpg');
+	background-size: auto;
+	background-repeat: no-repeat;
+	font: 14px/1.7 "Open Sans",Helvetica,Arial,sans-serif;
+	font-weight: bold;
+}
+
+header{
+	text-align: center;
+	font-style: algerian,calibri ;
+	color: white;
+	margin-top: -2.5%;
+
+}
+.Railgaadi {
+	color: black;
+	font-size: 50px;
+	font-family: Arial;
+	text-shadow: 0.5px 0.5px red;
+}
+
+footer{
+	display: inline-block;
+	text-align: center;
+	border-bottom: 2px solid white;
+	color: white;
+	position: absolute;
+	bottom: 10px;
+	left: 400px;
+
+}
+
+a{
+	color:white;
+	text-decoration: none;
+}
+
+a:hover{
+	color:black;
+	text-shadow: 0.5px 0.5px red;
+	
+}

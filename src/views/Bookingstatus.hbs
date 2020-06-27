@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="icon" type="image/png" href="logo.png">
+	<title>Railgaadi</title>
+	<link rel="stylesheet" type="text/css" href="/css/booktrainpg.css">
+</head>
+
+
+<body>
+
+	<div style="position: absolute;
+	left: 1.5%;
+	top:3%;
+	display: inline;">
+		<a href="/login"><img src="/css/homepage-icon.png" width="10%"></a>
+	</div>
+	<header>
+		<div class="Railgaadi">
+			<h1>Railgaadi</h1>
+		</div>
+	</header>
+
+	<table style="border: 2px solid black;
+		border-collapse: collapse;
+		text-align: -webkit-center;
+		position: absolute;
+		top: 200px;
+		left: 300px;
+		padding: 5px;
+		border-radius: 5px;
+		margin-bottom: 2%;">
+
+		<caption style="font-size: 20px; text-align: center;
+			background-color: orange;
+			margin-bottom: 2px;
+			border-radius: 5px;">Your Booking Status</caption>
+		<tr style="background-color: #32CC35;
+			padding: 50px 5px;
+			border-spacing: 2px;">
+			<th style="padding: 10px;"> <label><strong>Train Number</strong></label> </th>
+			<th style="padding: 10px;"> <label><strong>Train Name</strong></label> </th>
+			<th style="padding: 10px;"> <label><strong>Date & Time</strong></label> </th>
+			<th style="padding: 10px;"> <label for="class"><strong>Journey Status</strong></label> </th>
+			<th style="padding: 10px;"> <label><strong>Seat Number</strong></label> </th>
+			{{!-- <th style="padding: 10px;"> <label><strong>Cancel Ticket</strong></label> </th> --}}
+		</tr>
+
+		{{#each ar}}
+		<!--<form action='http://localhost:3000/login/book' method='POST'> -->
+		<tr style="background-color: #ffffff;
+				border-radius: 40px; 
+				padding: 50px 5px;
+				margin-bottom: 2px;
+				">
+			<td style="padding: 6px;">
+				<!-- <textarea readonly name='Train_number'> -->{{this.Train_Number}}
+				<!-- </textarea> -->
+			</td>
+			<td style="padding: 6px;">
+				<!-- <textarea readonly name='Train_name'> -->{{this.Train_Name}}
+				<!-- </textarea> -->
+			</td>
+			<td style="padding: 6px;">
+				<!-- <textarea readonly name='date'> -->{{this.date}}
+				<!-- </textarea> -->
+			</td>
+			<td style="padding: 6px;"> {{this.completed}} </td>
+			<td style="padding: 6px;"> {{this.seat}} </td>
+			{{!-- <td style="padding: 6px;"> <button style="background-color:orange;
+				width: 50px;
+				border-radius: 10px;
+				padding:2px 0px; ">Cancel</button> </td> --}}
+
+		</tr>
+		</form>
+		<br>
+		{{/each}}
+
+	</table>
+
+	<!-- {{#each ar}}
+        <p>
+            <strong>Train Number:</strong>  {{this.Train_Number}}
+            <br>
+            <strong>Train Name:</strong>  {{this.Train_Name}}
+            <br>
+            <strong>Date:</strong>  {{this.date}}
+            <br>
+            <strong>Journey Status:</strong>  {{this.completed}}
+            <br>
+        </p>
+    {{/each}} -->
+</body>
+
+</html>

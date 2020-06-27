@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="logo.png">
+	
+	<link rel="stylesheet" type="text/css" href="si.css">
+
+	<title>Railgaadi</title>
+</head>
+<body>
+
+	<div style="position: absolute;
+    left: 1.5%;
+    top:3%;
+    display: inline;">
+    <a href="SearchTrain.html"><img src="/css/homepage-icon.png" width="10%"></a>
+    </div> 
+	
+	<header>
+		<div class="Railgaadi">
+			<h1>Railgaadi</h1>
+		</div>
+	</header>
+	<br>
+	<br>
+	<div class="su-form">
+		
+		<img src="logo.png" width="20%" alt="logo">
+		<div style="color: green; font-size: 20px;">Log In To Your Account</div>
+		<div style="margin-right: 37%" class="InputLabel">Username</div>
+		<form action="http://localhost:3000/login" method='POST'>
+			<input class="inputs" type="username" name="username" placeholder="Type your username">
+			<br>
+			<br>
+			<div style="margin-right: 37%" class="InputLabel">Password</div>
+			<input class="inputs" type="password" name="password" placeholder="Your password">
+			<br>
+			<br>
+			<button style="font-size: 120%" class="su-btn">Sign in</button>
+		</form>
+		<br>
+		<br>
+		<hr>
+		<form action="/su.html">
+			<button style="font-size: 120%" class="su-btn">Create New Account</button>	
+		</form>
+		
+	</div>
+
+
+	<footer>
+		<!-- <hr style="border-width: 2px;" width="100%"> -->
+		<span class="logo" style="display: inline;"><img src="logo.png" width="4%" alt="logo"></span>
+		<span class="aboutus" ><a href="#">About us </a>| </span>
+		&copy; Copyright Railgaadi.in
+	</footer>
+</body>
+</html>
