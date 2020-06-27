@@ -40,8 +40,8 @@ app.use(passport.session());
 require('./passport')(passport)
 
 
-app.use(userRoute)  //To use the UserRoute in the routes folder
-app.use(trainRoute) //To use the TrainRoute in the routes folder
+app.use(userRoute) 
+app.use(trainRoute)
 app.use(bookingRoute)
 app.use(bookingStatus)
 app.use(stationRoute)
