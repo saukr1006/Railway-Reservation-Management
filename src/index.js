@@ -40,11 +40,8 @@ require('./passport')(passport)
 
 
 app.use(userRoute) 
-<<<<<<< HEAD
-app.use(trainRoute) 
-=======
 app.use(trainRoute)
->>>>>>> 4a3e9908eec1919f9e285d240ff633c2e7497a5f
+app.use(trainRoute)
 app.use(bookingRoute)
 app.use(bookingStatus)
 app.use(stationRoute)
