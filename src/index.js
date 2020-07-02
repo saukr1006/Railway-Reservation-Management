@@ -41,7 +41,6 @@ require('./passport')(passport)
 
 app.use(userRoute) 
 app.use(trainRoute)
-app.use(trainRoute)
 app.use(bookingRoute)
 app.use(bookingStatus)
 app.use(stationRoute)
