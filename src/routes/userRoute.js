@@ -4,9 +4,9 @@ const User = require('../models/users')
 const passport = require('passport')
 const {ensureAuthenticated} = require('../auth')
 
-router.get('/',(req,res)=>{
-    res.render('test')
-})
+// router.get('/',(req,res)=>{
+//     res.render('test')
+// })
 
 router.post('/signup',(req,res)=>{
     const user = new User(req.body)
