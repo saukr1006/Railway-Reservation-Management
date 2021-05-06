@@ -1,5 +1,5 @@
 # Railway-Reservation-Management
-Welcome to the Railway-Management-System. From a user's perspective it is a software that manages the booking of tickets in railways, in particular, Indian Railways.<br><br>
+Welcome to the Railway-Management-System. From a user's perspective it is a software that manages the booking of tickets in railways.<br><br>
 This project is currently using NodeJs and MongoDB as the technologies for building the project with a javascript backend.<br>
 The languages used are Javascript, HTML and CSS.<br><br>
 
